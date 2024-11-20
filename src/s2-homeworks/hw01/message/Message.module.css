@@ -1,0 +1,50 @@
+.message {
+    margin-bottom: 50px;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    font: 600 16px "Montserrat", sans-serif;
+    color: #fff;
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 415px;
+    min-height: 60px;
+    padding: 10px 15px;
+
+    background-color: #0066CC;
+    border-radius: 15px;
+}
+
+.text:after {
+
+}
+
+.name {
+
+}
+
+.messageText {
+    font-weight: 400;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12px;
+    font-size: 10px;
+}

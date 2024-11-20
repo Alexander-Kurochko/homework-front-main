@@ -1,0 +1,46 @@
+.friendMessage {
+    margin-bottom: 55px;
+}
+
+.friendImageAndText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font: 600 16px "Montserrat", sans-serif;
+    color: #000;
+}
+
+.friendImageAndText img {
+    width: 48px;
+    height: 48px;
+}
+
+.friendText {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 415px;
+    height: 60px;
+    padding: 10px 15px;
+
+    background-color: #F5F7FB;
+    border-radius: 15px;
+}
+
+.friendText:after {
+
+}
+
+.friendName {
+
+}
+
+.friendMessageText {
+    font-weight: 400;
+}
+
+.friendTime {
+    margin-left: 12px;
+    font-size: 10px;
+}

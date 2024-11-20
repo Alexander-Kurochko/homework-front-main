@@ -1,0 +1,18 @@
+.App {
+    --header_height: 60px;
+
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hw {
+    display: flex;
+    flex-direction: column;
+}
+
+.hwTitle {
+    font: 600 22px "Montserrat", sans-serif;
+    color: #000;
+    margin-bottom: 35px;
+}
