@@ -2,19 +2,32 @@
 }
 
 .input {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    width: 372px;
+    height: 36px;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
 }
 
 .errorInput {
+    border: 1px solid #cc1439;
+    border-radius: 5px;
+    width: 372px;
+    height: 36px;
 }
 
 .errorInput:focus {
+    font-size: 14px;
 }
 
 .error {
+    font: 400 10px "Montserrat", sans-serif;
+    color: #cc1439;
 }
