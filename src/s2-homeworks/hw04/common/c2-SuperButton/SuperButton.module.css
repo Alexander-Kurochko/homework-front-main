@@ -5,10 +5,12 @@
 
     border-radius: 3px;
     padding: 5px 24px;
-    width: 133px;
+    width: 140px;
     height: 30px;
     font: 600 14px / 1.42857 "Montserrat", sans-serif;
     color: #fff;
+
+    border: none;
 }
 
 .disabled {
@@ -19,8 +21,9 @@
 
 .secondary {
     border: 1px solid #06c;
-    width: 176px;
+    width: 140px;
     color: #06c;
+    background-color: #fff;
 }
 
 .default {
@@ -32,33 +35,33 @@
 }
 
 .default:hover {
-    width: 167px;
+    width: 140px;
     background: #0080ff;
 }
 
 .red:hover {
-    width: 167px;
+    width: 140px;
     background: #ff1a47;
 }
 
 .secondary:hover {
-    width: 167px;
+    width: 140px;
     background: #e5f0fa;
 }
 
 
 .default:active {
-    width: 149px;
+    width: 140px;
     background: #0059b2;
 }
 
 .secondary:active {
-    width: 149px;
+    width: 140px;
     background: #c9e5ff;
 }
 
 .red:active {
-    width: 149px;
+    width: 140px;
     background: #b21232;
 }
 
