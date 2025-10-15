@@ -21,7 +21,7 @@
 
 .secondary {
     border: 1px solid #06c;
-    width: 140px;
+    width: 160px;
     color: #06c;
     background-color: #fff;
 }
@@ -45,7 +45,7 @@
 }
 
 .secondary:hover {
-    width: 140px;
+    width: 160px;
     background: #e5f0fa;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .secondary:active {
-    width: 140px;
+    width: 160px;
     background: #c9e5ff;
 }
 
@@ -66,4 +66,5 @@
 }
 
 .button:disabled {
+    width: 160px;
 }
