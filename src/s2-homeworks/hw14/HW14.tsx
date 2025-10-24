@@ -21,6 +21,7 @@ const getTechs = (find: string) => {
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
+            throw e
         })
 }
 
@@ -39,6 +40,15 @@ const HW14 = () => {
                 // сохранить пришедшие данные
 
                 //
+                setTechs(res.data.techs)
+            })
+
+            .catch((error) => {
+                console.log('Error catch', error)
+            })
+
+            .finally( () => {
+                setLoading(false)
             })
     }
 
@@ -48,8 +58,9 @@ const HW14 = () => {
 
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
         //
+        setSearchParams({find: value})
+        console.log(searchParams)
     }
 
     useEffect(() => {
