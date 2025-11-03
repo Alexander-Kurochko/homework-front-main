@@ -52,11 +52,17 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
+                if (res?.data) {
+                    setTechs(res.data.techs || [])
+                    setTotalCount(res.data.totalCount || 0)
+                }
                 //
             })
+            .catch( (error) => {
+                return error.response?.data?.errorText || error.message|| 'Ошибка загрузки'
+            })
+            .finally(() => setLoading(false));
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
@@ -64,10 +70,16 @@ const HW15 = () => {
 
         // setPage(
         // setCount(
-
+        setPage(newPage)
+        setCount(newCount)
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({sort, page: newPage, count: newCount})
+        setSearchParams({
+            sort: sort,
+            page: String(newPage),
+            count: String(newCount)
+        });
         //
     }
 
@@ -76,10 +88,17 @@ const HW15 = () => {
 
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
+        setSort(newSort)
+        setPage(1)
 
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({sort: newSort, page: 1, count: count})
+        setSearchParams({
+            sort: newSort,
+            page: '1',
+            count: String(count)
+        });
         //
     }
 
